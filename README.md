@@ -1,2 +1,2 @@
-# S-Body
+# S-Body Application
 Constellation Project
