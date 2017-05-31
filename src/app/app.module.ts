@@ -1,0 +1,46 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+
+import { MyApp } from './app.component';
+import { CreateUserPage } from '../pages/createUser/createUser';
+import { HomePage } from '../pages/home/home';
+import { InformationsPage } from '../pages/informations/informations';
+import { MyWinPage } from '../pages/myWin/myWin';
+import { ProgressionPage } from '../pages/progression/progression';
+import { UserChoicePage } from '../pages/userChoice/userChoice';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
+@NgModule({
+  declarations: [
+    MyApp,
+    CreateUserPage,
+    HomePage,
+    InformationsPage,
+    MyWinPage,
+    ProgressionPage,
+    UserChoicePage
+  ],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(MyApp),
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    CreateUserPage,
+    HomePage,
+    InformationsPage,
+    MyWinPage,
+    ProgressionPage,
+    UserChoicePage
+  ],
+  providers: [
+    StatusBar,
+    SplashScreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
+})
+export class AppModule {}
