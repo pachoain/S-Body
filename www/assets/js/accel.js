@@ -1,4 +1,6 @@
 // The watch id references the current `watchAcceleration`
+
+/*  Variables nécessaires pour le compteur de pas */
 var watchID = null;
 var myStepCount = 0;
 var myOldValue = 0;
@@ -6,15 +8,38 @@ var myOldValueZ = 0;
 var myOldValueX = 0;
 var limitValuePos = 8.5;
 var limitValueNeg = 9.5;
-var limitValueZ = 8.9;
-var limitOldValueZ = 8.1;
+var limitValueZ = 9;
+var limitOldValueZ = 7.5;
 var limitYValueZ = 6.5;
-var limitValueX = 3;
+var limitValueX = 1.5;
 var choosenFrequency = 200;
+
+/*   Coefficients calcul distance en fonction de la taille de l'utilisateur  */
+var a = 0.64878048;
+var b = 44.6744;
+
+var distance = 0;
+
+/*   Coefficients calcul calories brulées   */
+var a1 = 0.448952;
+
+var calories = 0;
 
 // Wait for device API libraries to load
 //
 document.addEventListener("deviceready", onDeviceReady, false);
+
+// Calcul of distance with user's size
+//
+function calculDistance(userSize){
+  distance = (userSize * a - b) * myStepCount;
+}
+
+// Calcul of burn calories with step counter and unactivity
+//
+function calculBurnCal(){
+  calories = a1 * myStepCount;
+}
 
 // device APIs are available
 //
@@ -80,11 +105,15 @@ function onSuccess(acceleration) {
 			}*/
 		}
 	}
-	element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
+  calculDistance(182);
+  calculBurnCal();
+	element.innerHTML = /*'Acceleration X: ' + acceleration.x + '<br />' +
 		'Acceleration Y: ' + acceleration.y + '<br />' +
-		'Acceleration Z: ' + acceleration.z + '<br />' +
-		'MyCountStep ' + myStepCount + '<br />' +
-		'Timestamp: ' + acceleration.timestamp + '<br />';
+		'Acceleration Z: ' + acceleration.z + '<br />' +*/
+    'Distance ' + distance + '<br />' +
+    'Calories ' + calories + '<br />' +
+		'MyCountStep ' + myStepCount + '<br />'; /*+
+		'Timestamp: ' + acceleration.timestamp + '<br />';*/
 	myOldValue = acceleration.y;
 
   myOldValueX = acceleration.x;
