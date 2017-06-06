@@ -12,7 +12,7 @@ var limitValueZ = 9;
 var limitOldValueZ = 7.5;
 var limitYValueZ = 6.5;
 var limitValueX = 1.5;
-var choosenFrequency = 200;
+var choosenFrequency = 120;
 
 /*   Coefficients calcul distance en fonction de la taille de l'utilisateur  */
 var a = 0.64878048;
