@@ -10,10 +10,6 @@ log.txt
 *.sublime-project
 *.sublime-workspace
 .vscode/
-npm-debug.log*
 
 $RECYCLE.BIN/
 
-.DS_Store
-Thumbs.db
-UserInterfaceState.xcuserstate
