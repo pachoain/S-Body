@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 
 @Component({
   selector: 'page-myWin',
@@ -7,8 +7,19 @@ import { NavController } from 'ionic-angular';
 })
 export class MyWinPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(private modal: ModalController) {
 
+  }
+
+  openTrophy(){
+    const myData = {
+      name: 'Mon premier trophée',
+      point: 1,
+      description: 'Bienvenu dans notre application ! Pour vous encourager dans votre programme connectén nous vous offrons votre premier Trophée ! Bon courage pour la suite !',
+      image: '../../assets/img/trophies/trophy.png'
+    }
+    const myTrophy = this.modal.create('TrophyPage', { data: myData });
+    myTrophy.present();
   }
 
 }

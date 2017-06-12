@@ -21563,7 +21563,7 @@ ion-spinner.spinner-paused svg {
   -ms-flex-pack: center;
   justify-content: center;
   border-top: 0.55px solid rgba(0, 0, 0, 0.3);
-  background: #f8f8f8;
+  background: #ff7b53;
 }
 
 .tabs-ios[tabsPlacement=top] .tabbar {
@@ -21733,7 +21733,7 @@ ion-spinner.spinner-paused svg {
 }
 
 .tabs-md .tabbar {
-  background: #f8f8f8;
+  background: #ff7b53;
 }
 
 .tabs-md .tab-button {
@@ -21942,7 +21942,7 @@ ion-spinner.spinner-paused svg {
 }
 
 .tabs-wp .tabbar {
-  background: #f8f8f8;
+  background: #ff7b53;
 }
 
 .tabs-wp .tab-button {
@@ -22839,7 +22839,7 @@ ion-navbar.toolbar {
 }
 
 .toolbar-background-ios {
-  background: #f8f8f8;
+  background: #ff7b53;
 }
 
 .header-ios .toolbar-background-ios,
@@ -24365,7 +24365,7 @@ ion-navbar.toolbar {
 
 .toolbar-background-md {
   border-color: #b2b2b2;
-  background: #f8f8f8;
+  background: #ff7b53;
 }
 
 .header-md::after,
@@ -25865,7 +25865,7 @@ ion-navbar.toolbar {
 
 .toolbar-background-wp {
   border-color: #b2b2b2;
-  background: #f8f8f8;
+  background: #ff7b53;
 }
 
 .toolbar-content-wp {
