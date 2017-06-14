@@ -8,17 +8,16 @@
 </ion-header>
 
 <ion-content padding>
-    <!--<ion-list>   Exemple of list
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
+  <ion-list>
+    <ion-item *ngFor="let pdata of data" (click)="openTrophy(pdata)">
+      <!--<ion-thumbnail item-start *ngIf="{{ pdata.unlocked }}; then thenBlock else elseBlock">
+        <img #thenBlock src="{{ pdata.image }}"/>
+        <img #elseBlock src="assets/img/trophies/bloque.png"/>
+      </ion-thumbnail>-->
+      <ion-thumbnail item-start>
+        <img src="{{ pdata.image }}"/>
+      </ion-thumbnail>
+      <h2 style="font-size: 1.32rem;">{{ pdata.name }}</h2>
+    </ion-item>
   </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>-->
-    <p> Mes Trophées. </p>
 </ion-content>

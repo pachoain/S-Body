@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Détails trophée</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeTrophy()">
+        <span ion-text showWhen="ios">Fermer</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img src="{{ data.image256 }}"/>
+    <ion-card-content>
+      <ion-card-title>{{ data.name }}</ion-card-title>
+      <p style="text-align: justify;">{{ data.description }}</p>
+    </ion-card-content>
+    <ion-item>
+      <ion-icon name='ribbon' item-start color="bright"></ion-icon>
+      Points
+      <ion-badge item-end>{{ data.points }}</ion-badge>
+    </ion-item>
+  </ion-card>
+</ion-content>

@@ -27,7 +27,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		2: 0
+/******/ 		3: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -55817,7 +55817,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h3>Ionic Menu Starter</h3>\n\n\n\n  <p>\n\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n\n  </p>\n\n	\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n\n	\n\n	<div id="accelerometer">Waiting for accelerometer...</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Objectifs</ion-title>\n\n  </ion-navbar>\n\n	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h3>Ionic Menu Starter</h3>\n\n\n\n  <p>\n\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n\n  </p>\n\n	\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n\n  <!--<button onClick="sendToConstellation()">Send to Constellation</button>-->\n\n	<div id="accelerometer">Waiting for accelerometer...</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
 ], HomePage);
@@ -55878,16 +55878,133 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var MyWinPage = (function () {
-    function MyWinPage(navCtrl) {
-        this.navCtrl = navCtrl;
+    function MyWinPage(modal) {
+        this.modal = modal;
+        this.data = [
+            {
+                name: 'Mes premiers pas...',
+                points: 1,
+                description: 'Bienvenue dans notre application ! Pour vous encourager dans votre programme connectée nous vous offrons votre premier Trophée ! Bon courage pour la suite !',
+                pas: 0,
+                distance: 0,
+                unlocked: true,
+                image: 'assets/img/trophies/premier.png',
+                image256: 'assets/img/trophies/premier1.png'
+            },
+            {
+                name: 'C\'était pas si dur !',
+                points: 15,
+                description: 'Bravo pour vos 1 000 pas atteints ! Continuez ainsi pour atteindre vos futures objectifs ! ',
+                pas: 1000,
+                distance: 0,
+                unlocked: false,
+                image: 'assets/img/trophies/1000.png',
+                image256: 'assets/img/trophies/1000_256.png'
+            },
+            {
+                name: '1 kilomètre à pied...',
+                points: 15,
+                description: 'Félicitation pour ce 1er kilomètre qui est seulement le début de votre ascension avec S-Fit !',
+                pas: 0,
+                distance: 100000,
+                unlocked: false,
+                image: 'assets/img/trophies/1km.png',
+                image256: 'assets/img/trophies/1km_256.png'
+            },
+            {
+                name: 'Pas mal !',
+                points: 30,
+                description: 'Excellent pour vos 10 000 pas avec S-Fit  ! Continuez votre programme d\'entrainement pour rester en forme.',
+                pas: 10000,
+                distance: 0,
+                unlocked: false,
+                image: 'assets/img/trophies/10000.png',
+                image256: 'assets/img/trophies/10000_256.png'
+            },
+            {
+                name: 'Ça use les souliers',
+                points: 30,
+                description: 'A force de marcher, vous réalisez des distances incroyables. Bientôt un nombre à 3 chiffres.',
+                pas: 0,
+                distance: 1000000,
+                unlocked: false,
+                image: 'assets/img/trophies/10km.png',
+                image256: 'assets/img/trophies/10km_256.png'
+            },
+            {
+                name: 'Petit randonneur',
+                points: 30,
+                description: 'Vous venez de faire une distance cumulée d\'un Semi-marathon : 21 Km atteints ! Encore un semi-effort pour devenir un Marathoniens de légende. ',
+                pas: 0,
+                distance: 2100000,
+                unlocked: false,
+                image: 'assets/img/trophies/semi-marathon.png',
+                image256: 'assets/img/trophies/semi-marathon_256.png'
+            },
+            {
+                name: 'Grand voyageur',
+                points: 90,
+                description: 'Vos efforts ont permis de faire la distance d\'un véritable marathon : 42 Km atteints ! S-Fit vous encourage pour la suite.',
+                pas: 0,
+                distance: 4200000,
+                unlocked: false,
+                image: 'assets/img/trophies/marathon.png',
+                image256: 'assets/img/trophies/marathon_256.png'
+            },
+            {
+                name: 'On ne l\'arrête pas',
+                points: 90,
+                description: '100 000 pas atteints ! Décidement... Vos mollets vont vous permettre d\'atteindre les sommets de la plus haute montagne.',
+                pas: 100000,
+                distance: 0,
+                unlocked: false,
+                image: 'assets/img/trophies/100000.png',
+                image256: 'assets/img/trophies/100000_256.png'
+            },
+            {
+                name: 'Le centième effort',
+                points: 90,
+                description: 'Voila vos 100 Km sont atteints ! Nous vous invitons maintenant à faire le maximum ! Jusqu\'au bout du monde !',
+                pas: 0,
+                distance: 10000000,
+                unlocked: false,
+                image: 'assets/img/trophies/100km.png',
+                image256: 'assets/img/trophies/100km_256.png'
+            },
+            {
+                name: 'Un petit pas pour l\'homme...',
+                points: 200,
+                description: 'Tous les trophées sont débloqués et le 1 million de pas atteint, bravo ! Vous devenez officiellement un membre premium S-Fit',
+                pas: 1000000,
+                distance: 0,
+                unlocked: false,
+                image: 'assets/img/trophies/million.png',
+                image256: 'assets/img/trophies/million_256.png'
+            }
+        ];
+        for (var _i = 0, _a = this.data; _i < _a.length; _i++) {
+            var pdata = _a[_i];
+            /*if (totalpas >= pdata.pas && totaldistance >= pdata.distance) {
+              pdata.unlocked = true;
+            }*/
+            if (!pdata.unlocked) {
+                pdata.image = "assets/img/trophies/bloque.png";
+            }
+        }
     }
+    MyWinPage.prototype.openTrophy = function (data) {
+        if (data.unlocked) {
+            var myTrophy = this.modal.create('TrophyPage', { vdata: data });
+            myTrophy.present();
+        }
+    };
     return MyWinPage;
 }());
 MyWinPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-myWin',template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\myWin\myWin.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Trophées</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!--<ion-list>   Exemple of list\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>-->\n\n    <p> Mes Trophées. </p>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\myWin\myWin.html"*/
+        selector: 'page-myWin',template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\myWin\myWin.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Trophées</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item *ngFor="let pdata of data" (click)="openTrophy(pdata)">\n\n      <!--<ion-thumbnail item-start *ngIf="{{ pdata.unlocked }}; then thenBlock else elseBlock">\n\n        <img #thenBlock src="{{ pdata.image }}"/>\n\n        <img #elseBlock src="assets/img/trophies/bloque.png"/>\n\n      </ion-thumbnail>-->\n\n      <ion-thumbnail item-start>\n\n        <img src="{{ pdata.image }}"/>\n\n      </ion-thumbnail>\n\n      <h2 style="font-size: 1.32rem;">{{ pdata.name }}</h2>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\myWin\myWin.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
 ], MyWinPage);
 
 //# sourceMappingURL=myWin.js.map
@@ -74539,10 +74656,14 @@ module.exports = g;
 var map = {
 	"../pages/add/add.module": [
 		265,
+		2
+	],
+	"../pages/trophy/trophy.module": [
+		266,
 		1
 	],
 	"../pages/users/users.module": [
-		266,
+		267,
 		0
 	]
 };
@@ -74617,6 +74738,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
                     { loadChildren: '../pages/add/add.module#AddPageModule', name: 'AddPage', segment: 'add', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/trophy/trophy.module#TrophyPageModule', name: 'TrophyPage', segment: 'trophy', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/users/users.module#UsersPageModule', name: 'UsersPage', segment: 'users', priority: 'low', defaultHistory: [] }
                 ]
             }),

@@ -7,8 +7,13 @@ webpackJsonp([0],{
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__users__ = __webpack_require__(266);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UsersPageModule", function() { return UsersPageModule; });
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trophy__ = __webpack_require__(266);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrophyPageModule", function() { return TrophyPageModule; });
+>>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,6 +23,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+<<<<<<< HEAD
 var UsersPageModule = (function () {
     function UsersPageModule() {
     }
@@ -38,6 +44,28 @@ UsersPageModule = __decorate([
 ], UsersPageModule);
 
 //# sourceMappingURL=users.module.js.map
+=======
+var TrophyPageModule = (function () {
+    function TrophyPageModule() {
+    }
+    return TrophyPageModule;
+}());
+TrophyPageModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__trophy__["a" /* TrophyPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__trophy__["a" /* TrophyPage */]),
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__trophy__["a" /* TrophyPage */]
+        ]
+    })
+], TrophyPageModule);
+
+//# sourceMappingURL=trophy.module.js.map
+>>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
 
 /***/ }),
 
@@ -47,7 +75,11 @@ UsersPageModule = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+<<<<<<< HEAD
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersPage; });
+=======
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrophyPage; });
+>>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -59,6 +91,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+<<<<<<< HEAD
 /**
  * Generated class for the UsersPage page.
  *
@@ -98,6 +131,28 @@ UsersPage = __decorate([
 ], UsersPage);
 
 //# sourceMappingURL=users.js.map
+=======
+var TrophyPage = (function () {
+    function TrophyPage(navParams, view) {
+        this.navParams = navParams;
+        this.view = view;
+        this.data = this.navParams.get('vdata');
+    }
+    TrophyPage.prototype.closeTrophy = function () {
+        this.view.dismiss();
+    };
+    return TrophyPage;
+}());
+TrophyPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+        selector: 'page-trophy',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\trophy\trophy.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Détails trophée</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="closeTrophy()">\n\n        <span ion-text showWhen="ios">Fermer</span>\n\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-card>\n\n    <img src="{{ data.image256 }}"/>\n\n    <ion-card-content>\n\n      <ion-card-title>{{ data.name }}</ion-card-title>\n\n      <p style="text-align: justify;">{{ data.description }}</p>\n\n    </ion-card-content>\n\n    <ion-item>\n\n      <ion-icon name=\'ribbon\' item-start color="bright"></ion-icon>\n\n      Points\n\n      <ion-badge item-end>{{ data.points }}</ion-badge>\n\n    </ion-item>\n\n  </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\trophy\trophy.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */]])
+], TrophyPage);
+
+//# sourceMappingURL=trophy.js.map
+>>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
 
 /***/ })
 
