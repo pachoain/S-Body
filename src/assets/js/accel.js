@@ -85,7 +85,7 @@ function stopWatch() {
 function onSuccess(acceleration) {
 	// Ecriture du résultat dans ma div
 	var element = document.getElementById('accelerometer');
-	
+
 	// Calcul des pas quand le téléphone est à l'envers dans la poche
 	if (acceleration.y < 0) {
 		if (acceleration.y > -limitValueNeg) {
@@ -112,7 +112,7 @@ function onSuccess(acceleration) {
       /*} else if(acceleration.y < limitYValueZ && myOldValue < limitYValueZ){
 				if(acceleration.x > limitValueX && myOldValueX < limitValueX && acceleration.z > limitValueZ){
 					myStepCount = myStepCount + 1;
-				}			
+				}
 			}*/
 		}
 	}

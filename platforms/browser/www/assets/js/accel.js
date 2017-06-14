@@ -31,10 +31,10 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 // Test sending data to constellation
 //
-function sendToConstellation(){
+/*function sendToConstellation(){
   console.log("I'm a button");
   constellation.server.sendMessage({Scope:'Package', Args:['StepManager']}, 'updateStepHistory', 38);
-}
+}*/
 
 // Calcul of distance with user's size
 //
@@ -85,7 +85,7 @@ function stopWatch() {
 function onSuccess(acceleration) {
 	// Ecriture du résultat dans ma div
 	var element = document.getElementById('accelerometer');
-	
+
 	// Calcul des pas quand le téléphone est à l'envers dans la poche
 	if (acceleration.y < 0) {
 		if (acceleration.y > -limitValueNeg) {
@@ -105,14 +105,14 @@ function onSuccess(acceleration) {
 				if(acceleration.z > limitValueZ && myOldValueZ < limitOldValueZ && acceleration.x < limitValueX && acceleration.x > -limitValueX){
 					myStepCount = myStepCount + 1;
           stepHist = myStepCount;
-          constellation.server.sendMessage({Scope:'Package', Args:['StepManager']}, 'updateStateHistory', [stepHist]);
+          constellation.server.sendMessage({Scope:'Package', Args:['StepManager']}, 'updateStepHistory', stepHist);
 				}
         myOldValueZ = acceleration.z;
 			}
       /*} else if(acceleration.y < limitYValueZ && myOldValue < limitYValueZ){
 				if(acceleration.x > limitValueX && myOldValueX < limitValueX && acceleration.z > limitValueZ){
 					myStepCount = myStepCount + 1;
-				}			
+				}
 			}*/
 		}
 	}

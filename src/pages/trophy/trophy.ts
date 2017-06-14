@@ -7,17 +7,13 @@ import { IonicPage, NavParams, ViewController } from 'ionic-angular';
   templateUrl: 'trophy.html',
 })
 export class TrophyPage {
+  data;
 
   constructor(private navParams: NavParams, private view: ViewController) {
-  }
-
-  ionViewWillLoad() {
-    const data = this.navParams.get('data');
-    console.log(data);
+    this.data = this.navParams.get('vdata');
   }
 
   closeTrophy(){
     this.view.dismiss();
   }
-
 }
