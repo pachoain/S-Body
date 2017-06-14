@@ -29,6 +29,13 @@ var calories = 0;
 //
 document.addEventListener("deviceready", onDeviceReady, false);
 
+// Test sending data to constellation
+//
+function sendToConstellation(){
+  console.log("I'm a button");
+  constellation.server.sendMessage({Scope:'Package', Args:['StepManager']}, 'updateStepHistory', 38);
+}
+
 // Calcul of distance with user's size
 //
 function calculDistance(userSize){
@@ -46,6 +53,8 @@ function calculBurnCal(){
 function onDeviceReady() {
 	cordova.plugins.backgroundMode.enable();
 	startWatch();
+  stepHist = 38;
+  console.log(stepHist);
 	console.log("i'm here");
 	console.log(choosenFrequency);
 }
@@ -94,7 +103,9 @@ function onSuccess(acceleration) {
 				// Calcul des pas quand on marche le téléphone en main
 			} else if(acceleration.y < limitYValueZ && myOldValue < limitYValueZ){
 				if(acceleration.z > limitValueZ && myOldValueZ < limitOldValueZ && acceleration.x < limitValueX && acceleration.x > -limitValueX){
-					myStepCount = myStepCount + 1;   
+					myStepCount = myStepCount + 1;
+          stepHist = myStepCount;
+          constellation.server.sendMessage({Scope:'Package', Args:['StepManager']}, 'updateStateHistory', [stepHist]);
 				}
         myOldValueZ = acceleration.z;
 			}
