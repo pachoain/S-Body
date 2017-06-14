@@ -5,19 +5,6 @@
   <script data-ionic="inject">
     (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.3.0';i.angular='4.1.2';i.staticDir='build/';})(window);
   </script>
-<<<<<<< HEAD
-  <meta charset="UTF-8">
-  <title>Ionic App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-
-  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4e8ef7">
-
-  <!-- cordova.js required for cordova apps -->
-=======
 	<meta charset="UTF-8">
 	<title>Ionic App</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -29,31 +16,10 @@
 	<meta name="theme-color" content="#4e8ef7">
 
 	<!-- cordova.js required for cordova apps -->
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
 	<script src="lib/ngCordova/dist/ng-cordova.js"></script>
 	<script src="cordova.js"></script>
 	<script src="assets/js/accel.js"></script>
 
-<<<<<<< HEAD
-  <!-- Constellation required libs -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.2.1.min.js"></script>
-  <script type="text/javascript" src="https://cdn.myconstellation.io/js/Constellation-1.8.1.min.js"></script>
-
-  <script>
-    var controller = $.signalR.createConstellationController("http://iberos.freeboxos.fr:80", "b8998b7c901089490b2359884be19e6627d5bd68", "MyConstellation");
-    controller.connection.stateChanged(function (change) {
-      if (change.newState === $.signalR.connectionState.connected) {
-        console.log("Je suis connecté !");
-      } else {
-        console.log("Je n'arrive pas à me connecter...");
-      }
-    });
-    controller.connection.start();
-  </script>
-
-  <!-- un-comment this code to enable service worker
-=======
 	<!-- Constellation required libs -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.2.1.min.js"></script>
@@ -76,7 +42,6 @@
 	</script>
 
 	<!-- un-comment this code to enable service worker
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')

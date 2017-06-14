@@ -27,7 +27,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		1: 0
+/******/ 		3: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -29581,11 +29581,7 @@ function NavController_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__ = __webpack_require__(138);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__ = __webpack_require__(68);
-<<<<<<< HEAD
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__["a"]; });
-=======
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__["a"]; });
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_nav_nav_pop__ = __webpack_require__(66);
 /* unused harmony reexport NavPop */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_nav_nav_pop_anchor__ = __webpack_require__(140);
@@ -29702,11 +29698,7 @@ function NavController_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__platform_dom_controller__ = __webpack_require__(8);
 /* unused harmony reexport DomController */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__platform_platform__ = __webpack_require__(3);
-<<<<<<< HEAD
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
-=======
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
 /* unused harmony reexport setupPlatform */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__tap_click_haptic__ = __webpack_require__(36);
 /* unused harmony reexport Haptic */
@@ -29715,11 +29707,7 @@ function NavController_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__navigation_ionic_page__ = __webpack_require__(230);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_114__navigation_ionic_page__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__navigation_nav_controller__ = __webpack_require__(19);
-<<<<<<< HEAD
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_115__navigation_nav_controller__["a"]; });
-=======
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_115__navigation_nav_controller__["a"]; });
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__navigation_nav_controller_base__ = __webpack_require__(45);
 /* unused harmony reexport NavControllerBase */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__navigation_nav_params__ = __webpack_require__(15);
@@ -55829,15 +55817,9 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-<<<<<<< HEAD
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h3>Ionic Menu Starter</h3>\n\n\n\n  <p>\n\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n\n  </p>\n\n	\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n\n	\n\n	<div id="accelerometer">Waiting for accelerometer...</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\home\home.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
-=======
         selector: 'page-home',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Objectifs</ion-title>\n\n  </ion-navbar>\n\n	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h3>Ionic Menu Starter</h3>\n\n\n\n  <p>\n\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n\n  </p>\n\n	\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n\n  <!--<button onClick="sendToConstellation()">Send to Constellation</button>-->\n\n	<div id="accelerometer">Waiting for accelerometer...</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\home\home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
 ], HomePage);
 
 //# sourceMappingURL=home.js.map
@@ -55869,15 +55851,9 @@ var InformationsPage = (function () {
 }());
 InformationsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-<<<<<<< HEAD
-        selector: 'page-informations',template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\informations\informations.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Informations</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!--<ion-list>   Exemple of list\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>-->\n\n    <p> Informations </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\informations\informations.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
-=======
         selector: 'page-informations',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\informations\informations.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Informations</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!--<ion-list>   Exemple of list\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>-->\n\n    <p> Informations </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\informations\informations.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
 ], InformationsPage);
 
 //# sourceMappingURL=informations.js.map
@@ -56026,15 +56002,9 @@ var MyWinPage = (function () {
 }());
 MyWinPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-<<<<<<< HEAD
-        selector: 'page-myWin',template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\myWin\myWin.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Trophées</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!--<ion-list>   Exemple of list\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>-->\n\n    <p> Mes Trophées. </p>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\myWin\myWin.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
-=======
         selector: 'page-myWin',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\myWin\myWin.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Trophées</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item *ngFor="let pdata of data" (click)="openTrophy(pdata)">\n\n      <!--<ion-thumbnail item-start *ngIf="{{ pdata.unlocked }}; then thenBlock else elseBlock">\n\n        <img #thenBlock src="{{ pdata.image }}"/>\n\n        <img #elseBlock src="assets/img/trophies/bloque.png"/>\n\n      </ion-thumbnail>-->\n\n      <ion-thumbnail item-start>\n\n        <img src="{{ pdata.image }}"/>\n\n      </ion-thumbnail>\n\n      <h2 style="font-size: 1.32rem;">{{ pdata.name }}</h2>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\myWin\myWin.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
 ], MyWinPage);
 
 //# sourceMappingURL=myWin.js.map
@@ -56066,15 +56036,9 @@ var ProgressionPage = (function () {
 }());
 ProgressionPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-<<<<<<< HEAD
-        selector: 'page-progression',template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\progression\progression.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Ma Progression</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!--<ion-list>   Exemple of list\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>-->\n\n    <p> Mes Progressions </p>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\progression\progression.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
-=======
         selector: 'page-progression',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\progression\progression.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Ma Progression</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!--<ion-list>   Exemple of list\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>-->\n\n    <p> Mes Progressions </p>\n\n</ion-content>'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\progression\progression.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
 ], ProgressionPage);
 
 //# sourceMappingURL=progression.js.map
@@ -56101,28 +56065,66 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var UserChoicePage = (function () {
     function UserChoicePage(modal) {
         this.modal = modal;
+        this.data = [
+            {
+                nom: 'Choain',
+                prenom: 'Pierre-Alexandre',
+                items: [
+                    { title: 'Sexe', note: 'M' },
+                    { title: 'Taille', note: '174' },
+                    { title: 'Poids', note: '74' },
+                    { title: 'Date', note: '09/03/1996' }
+                ],
+                sexe: 'M',
+                taille: 174,
+                poids: 74,
+                date: '09/03/1996'
+            },
+            {
+                nom: 'Kieffer',
+                prenom: 'Sarah',
+                items: [
+                    { title: 'Sexe', note: 'F' },
+                    { title: 'Taille', note: '168' },
+                    { title: 'Poids', note: '70' },
+                    { title: 'Date', note: '16/04/1996' }
+                ],
+                sexe: 'F',
+                taille: 168,
+                poids: 70,
+                date: '16/04/1996'
+            },
+            {
+                nom: 'Briceno-Aguilera',
+                prenom: 'David',
+                items: [
+                    { title: 'Sexe', note: 'M' },
+                    { title: 'Taille', note: '170' },
+                    { title: 'Poids', note: '78' },
+                    { title: 'Date', note: '30/01/1996' }
+                ],
+                sexe: 'M',
+                taille: 170,
+                poids: 78,
+                date: '30/01/1996'
+            }
+        ];
     }
-    UserChoicePage.prototype.openUsers = function () {
-        var myData = {
-            name: 'Pierre-Alexandre',
-            sexe: 'M'
-        };
-        var myUsers = this.modal.create('UsersPage', { data: myData });
+    UserChoicePage.prototype.openUsers = function (data) {
+        var myUsers = this.modal.create('UsersPage', { vdata: data });
         myUsers.present();
+    };
+    UserChoicePage.prototype.addUser = function () {
+        var addUser = this.modal.create('AddPage');
+        addUser.present();
     };
     return UserChoicePage;
 }());
 UserChoicePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-<<<<<<< HEAD
-        selector: 'page-userChoice',template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\userChoice\userChoice.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Choix de l\'Utilisateur</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n\n\n  <ion-list>\n\n    <ion-list-header>\n\n      <h1>Qui est-ce ?</h1>\n\n    </ion-list-header>\n\n    <a ion-item (click)="openUsers()">\n\n      Pierre-Alexandre\n\n    </a>\n\n    <a ion-item (click)="openUsers()">\n\n      Sarah\n\n    </a>\n\n    <a ion-item (click)="openUsers()">\n\n      David\n\n    </a>\n\n  </ion-list>\n\n\n\n  <!--<button ion-item (click)="openUsers()">\n\n  </button>\n\n  -->\n\n\n\n  <button ion-button icon-right (click)="openUsers()" >\n\n  Ajouter un utilisateur\n\n  <ion-icon name="person-add"></ion-icon>\n\n</button>\n\n\n\n  <!-- Bouton pour menuToggle\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n\n  -->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\userChoice\userChoice.html"*/
+        selector: 'page-userChoice',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Choix de l\'Utilisateur</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n\n\n  <ion-list>\n\n    <ion-list-header>\n\n      <h1>Qui est-ce ?</h1>\n\n    </ion-list-header>\n\n    <a ion-item (click)="openUsers(data[0])">\n\n      Pierre-Alexandre\n\n    </a>\n\n    <a ion-item (click)="openUsers(data[1])">\n\n      Sarah\n\n    </a>\n\n    <a ion-item (click)="openUsers(data[2])">\n\n      David\n\n    </a>\n\n  </ion-list>\n\n\n\n\n\n\n\n  <button ion-button icon-right (click)="addUser()" >\n\n    Ajouter un utilisateur\n\n    <ion-icon name="person-add"></ion-icon>\n\n  </button>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
-=======
-        selector: 'page-userChoice',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Choix de l\'Utilisateur</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>User Choice with Ionic Starter</h3>\n\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n  </p>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
 ], UserChoicePage);
 
 //# sourceMappingURL=userChoice.js.map
@@ -74652,12 +74654,16 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-<<<<<<< HEAD
-	"../pages/users/users.module": [
-=======
-	"../pages/trophy/trophy.module": [
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
+	"../pages/add/add.module": [
 		265,
+		2
+	],
+	"../pages/trophy/trophy.module": [
+		266,
+		1
+	],
+	"../pages/users/users.module": [
+		267,
 		0
 	]
 };
@@ -74731,11 +74737,9 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
-<<<<<<< HEAD
+                    { loadChildren: '../pages/add/add.module#AddPageModule', name: 'AddPage', segment: 'add', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/trophy/trophy.module#TrophyPageModule', name: 'TrophyPage', segment: 'trophy', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/users/users.module#UsersPageModule', name: 'UsersPage', segment: 'users', priority: 'low', defaultHistory: [] }
-=======
-                    { loadChildren: '../pages/trophy/trophy.module#TrophyPageModule', name: 'TrophyPage', segment: 'trophy', priority: 'low', defaultHistory: [] }
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
                 ]
             }),
         ],
@@ -75011,23 +75015,13 @@ var MyApp = (function () {
     return MyApp;
 }());
 __decorate([
-<<<<<<< HEAD
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */]),
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\app\app.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
-=======
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */]),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */])
-], MyApp.prototype, "nav", void 0);
-MyApp = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\app\app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map
@@ -75059,15 +75053,9 @@ var CreateUserPage = (function () {
 }());
 CreateUserPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-<<<<<<< HEAD
-        selector: 'page-createUser',template:/*ion-inline-start:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\createUser\createUser.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Créer un Utilisateur</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!--<ion-list>   Exemple of list\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>-->\n\n    <p> Créer un Utilisateur </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Malefor\Documents\Miroir\S-Fit_Application\src\pages\createUser\createUser.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
-=======
         selector: 'page-createUser',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\createUser\createUser.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>Créer un Utilisateur</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <!--<ion-list>   Exemple of list\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-right>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>-->\n    <p> Créer un Utilisateur </p>\n</ion-content>\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\createUser\createUser.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
->>>>>>> e0133af45aa3dcde1d3897b9a33d0129d3b69d29
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
 ], CreateUserPage);
 
 //# sourceMappingURL=createUser.js.map
