@@ -8,11 +8,29 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>User Choice with Ionic Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-list>
+    <ion-list-header>
+      <h1>Qui est-ce ?</h1>
+    </ion-list-header>
+    <a ion-item (click)="openUsers(data[0])">
+      Pierre-Alexandre
+    </a>
+    <a ion-item (click)="openUsers(data[1])">
+      Sarah
+    </a>
+    <a ion-item (click)="openUsers(data[2])">
+      David
+    </a>
+  </ion-list>
+
+
+
+  <button ion-button icon-right (click)="addUser()" >
+    Ajouter un utilisateur
+    <ion-icon name="person-add"></ion-icon>
+  </button>
+
+
 </ion-content>
