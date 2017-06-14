@@ -56050,6 +56050,7 @@ ProgressionPage = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(99);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserChoicePage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -56062,9 +56063,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var UserChoicePage = (function () {
-    function UserChoicePage(modal) {
+    function UserChoicePage(modal, nav) {
         this.modal = modal;
+        this.nav = nav;
         this.data = [
             {
                 nom: 'Choain',
@@ -56118,15 +56121,21 @@ var UserChoicePage = (function () {
         var addUser = this.modal.create('AddPage');
         addUser.present();
     };
+    UserChoicePage.prototype.openPage = function (page) {
+        // Reset the content nav to have just this page
+        // we wouldn't want the back button to show in this scenario
+        this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
+    };
     return UserChoicePage;
 }());
 UserChoicePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-userChoice',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Choix de l\'Utilisateur</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n\n\n  <ion-list>\n\n    <ion-list-header>\n\n      <h1>Qui est-ce ?</h1>\n\n    </ion-list-header>\n\n    <a ion-item (click)="openUsers(data[0])">\n\n      Pierre-Alexandre\n\n    </a>\n\n    <a ion-item (click)="openUsers(data[1])">\n\n      Sarah\n\n    </a>\n\n    <a ion-item (click)="openUsers(data[2])">\n\n      David\n\n    </a>\n\n  </ion-list>\n\n\n\n\n\n\n\n  <button ion-button icon-right (click)="addUser()" >\n\n    Ajouter un utilisateur\n\n    <ion-icon name="person-add"></ion-icon>\n\n  </button>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/
+        selector: 'page-userChoice',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Choix de l\'Utilisateur</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n\n\n  <ion-list>\n\n    <ion-list-header>\n\n      <h1>Qui est-ce ?</h1>\n\n    </ion-list-header>\n\n    <button ion-item  (click)="openPage(p)">\n\n    	Pierre-Alexandre\n\n    </button>\n\n    <a ion-item (click)="openUsers(data[1])">\n\n      Sarah\n\n    </a>\n\n    <a ion-item (click)="openUsers(data[2])">\n\n      David\n\n    </a>\n\n  </ion-list>\n\n\n\n\n\n\n\n  <button ion-button icon-right (click)="addUser()" >\n\n    Ajouter un utilisateur\n\n    <ion-icon name="person-add"></ion-icon>\n\n  </button>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _b || Object])
 ], UserChoicePage);
 
+var _a, _b;
 //# sourceMappingURL=userChoice.js.map
 
 /***/ }),

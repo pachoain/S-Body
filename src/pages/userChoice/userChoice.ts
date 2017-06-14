@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ModalController } from 'ionic-angular';
+import { ModalController, NavController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-userChoice',
@@ -51,7 +52,7 @@ export class UserChoicePage {
       date: '30/01/1996'
     }
   ];
-  constructor(private modal: ModalController) {
+  constructor(private modal: ModalController, private nav: NavController) {
 
   }
 
@@ -64,6 +65,12 @@ export class UserChoicePage {
     const addUser = this.modal.create('AddPage');
     addUser.present();
 
+  }
+	
+	openPage(page) {
+    // Reset the content nav to have just this page
+    // we wouldn't want the back button to show in this scenario
+    this.nav.setRoot(HomePage);
   }
 
 
