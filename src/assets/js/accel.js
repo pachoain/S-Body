@@ -76,7 +76,7 @@ function stopWatch() {
 function onSuccess(acceleration) {
 	// Ecriture du résultat dans ma div
 	var element = document.getElementById('accelerometer');
-	
+
 	// Calcul des pas quand le téléphone est à l'envers dans la poche
 	if (acceleration.y < 0) {
 		if (acceleration.y > -limitValueNeg) {
@@ -94,14 +94,14 @@ function onSuccess(acceleration) {
 				// Calcul des pas quand on marche le téléphone en main
 			} else if(acceleration.y < limitYValueZ && myOldValue < limitYValueZ){
 				if(acceleration.z > limitValueZ && myOldValueZ < limitOldValueZ && acceleration.x < limitValueX && acceleration.x > -limitValueX){
-					myStepCount = myStepCount + 1;   
+					myStepCount = myStepCount + 1;
 				}
         myOldValueZ = acceleration.z;
 			}
       /*} else if(acceleration.y < limitYValueZ && myOldValue < limitYValueZ){
 				if(acceleration.x > limitValueX && myOldValueX < limitValueX && acceleration.z > limitValueZ){
 					myStepCount = myStepCount + 1;
-				}			
+				}
 			}*/
 		}
 	}

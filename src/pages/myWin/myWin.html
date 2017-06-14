@@ -9,59 +9,15 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item (click)="openTrophy()">
+    <ion-item *ngFor="let pdata of data" (click)="openTrophy(pdata)">
+      <!--<ion-thumbnail item-start *ngIf="{{ pdata.unlocked }}; then thenBlock else elseBlock">
+        <img #thenBlock src="{{ pdata.image }}"/>
+        <img #elseBlock src="assets/img/trophies/bloque.png"/>
+      </ion-thumbnail>-->
       <ion-thumbnail item-start>
-        <img src="assets/img/trophies/premier.png"/>
+        <img src="{{ pdata.image }}"/>
       </ion-thumbnail>
-      <h2>Mon premier trophée</h2>
-    </ion-item>
-    <ion-item (click)="openTrophy()">
-      <ion-thumbnail item-start>
-        <img src="assets/img/trophies/1000.png">
-      </ion-thumbnail>
-      <h2>1 000 pas</h2>
-    </ion-item>
-    <ion-item (click)="openTrophy()">
-      <ion-thumbnail item-start>
-        <img src="assets/img/trophies/1km.png">
-      </ion-thumbnail>
-      <h2>1 Km</h2>
-    </ion-item>
-    <ion-item (click)="openTrophy()">
-      <ion-thumbnail item-start>
-        <img src="assets/img/trophies/10000.png">
-      </ion-thumbnail>
-      <h2>10 000 pas</h2>
-    </ion-item>
-    <ion-item (click)="openTrophy()">
-      <ion-thumbnail item-start>
-        <img src="assets/img/trophies/10km.png">
-      </ion-thumbnail>
-      <h2>10 Km</h2>
-    </ion-item>
-    <ion-item (click)="openTrophy()">
-      <ion-thumbnail item-start>
-        <img src="assets/img/trophies/semi-marathon.png">
-      </ion-thumbnail>
-      <h2>Semi-marathon</h2>
-    </ion-item>
-    <ion-item (click)="openTrophy()">
-      <ion-thumbnail item-start>
-        <img src="assets/img/trophies/marathon.png">
-      </ion-thumbnail>
-      <h2>Marathon</h2>
-    </ion-item>
-    <ion-item (click)="openTrophy()">
-      <ion-thumbnail item-start>
-        <img src="assets/img/trophies/100000.png">
-      </ion-thumbnail>
-      <h2>100 000 pas</h2>
-    </ion-item>
-    <ion-item (click)="openTrophy()">
-      <ion-thumbnail item-start>
-        <img src="assets/img/trophies/100km.png">
-      </ion-thumbnail>
-      <h2>100 Km</h2>
+      <h2 style="font-size: 1.32rem;">{{ pdata.name }}</h2>
     </ion-item>
   </ion-list>
 </ion-content>
