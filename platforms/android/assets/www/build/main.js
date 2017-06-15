@@ -27,7 +27,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		1: 0
+/******/ 		3: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -29485,7 +29485,7 @@ function NavController_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_alert_alert__ = __webpack_require__(51);
 /* unused harmony reexport Alert */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_alert_alert_controller__ = __webpack_require__(109);
-/* unused harmony reexport AlertController */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_6__components_alert_alert_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_alert_alert_component__ = __webpack_require__(50);
 /* unused harmony reexport AlertCmp */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_app_app__ = __webpack_require__(6);
@@ -29581,7 +29581,7 @@ function NavController_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__ = __webpack_require__(138);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__ = __webpack_require__(68);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_nav_nav_pop__ = __webpack_require__(66);
 /* unused harmony reexport NavPop */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_nav_nav_pop_anchor__ = __webpack_require__(140);
@@ -29698,7 +29698,7 @@ function NavController_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__platform_dom_controller__ = __webpack_require__(8);
 /* unused harmony reexport DomController */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__platform_platform__ = __webpack_require__(3);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
 /* unused harmony reexport setupPlatform */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__tap_click_haptic__ = __webpack_require__(36);
 /* unused harmony reexport Haptic */
@@ -29707,7 +29707,7 @@ function NavController_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__navigation_ionic_page__ = __webpack_require__(230);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_114__navigation_ionic_page__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__navigation_nav_controller__ = __webpack_require__(19);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_115__navigation_nav_controller__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_115__navigation_nav_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__navigation_nav_controller_base__ = __webpack_require__(45);
 /* unused harmony reexport NavControllerBase */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__navigation_nav_params__ = __webpack_require__(15);
@@ -55817,9 +55817,9 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n  </p>\n	\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n	\n	<div id="accelerometer">Waiting for accelerometer...</div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Objectifs</ion-title>\n\n  </ion-navbar>\n\n	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h3>Ionic Menu Starter</h3>\n\n\n\n  <p>\n\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n\n  </p>\n\n	\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n\n  <!--<button onClick="sendToConstellation()">Send to Constellation</button>-->\n\n	<div id="accelerometer">Waiting for accelerometer...</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\home\home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
 ], HomePage);
 
 //# sourceMappingURL=home.js.map
@@ -55853,7 +55853,7 @@ InformationsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
         selector: 'page-informations',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\informations\informations.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Informations</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!--<ion-list>   Exemple of list\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>-->\n\n    <p> Informations </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\informations\informations.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
 ], InformationsPage);
 
 //# sourceMappingURL=informations.js.map
@@ -55880,22 +55880,129 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var MyWinPage = (function () {
     function MyWinPage(modal) {
         this.modal = modal;
+        this.data = [
+            {
+                name: 'Mes premiers pas...',
+                points: 1,
+                description: 'Bienvenue dans notre application ! Pour vous encourager dans votre programme connectée nous vous offrons votre premier Trophée ! Bon courage pour la suite !',
+                pas: 0,
+                distance: 0,
+                unlocked: true,
+                image: 'assets/img/trophies/premier.png',
+                image256: 'assets/img/trophies/premier1.png'
+            },
+            {
+                name: 'C\'était pas si dur !',
+                points: 15,
+                description: 'Bravo pour vos 1 000 pas atteints ! Continuez ainsi pour atteindre vos futures objectifs ! ',
+                pas: 1000,
+                distance: 0,
+                unlocked: false,
+                image: 'assets/img/trophies/1000.png',
+                image256: 'assets/img/trophies/1000_256.png'
+            },
+            {
+                name: '1 kilomètre à pied...',
+                points: 15,
+                description: 'Félicitation pour ce 1er kilomètre qui est seulement le début de votre ascension avec S-Fit !',
+                pas: 0,
+                distance: 100000,
+                unlocked: false,
+                image: 'assets/img/trophies/1km.png',
+                image256: 'assets/img/trophies/1km_256.png'
+            },
+            {
+                name: 'Pas mal !',
+                points: 30,
+                description: 'Excellent pour vos 10 000 pas avec S-Fit  ! Continuez votre programme d\'entrainement pour rester en forme.',
+                pas: 10000,
+                distance: 0,
+                unlocked: false,
+                image: 'assets/img/trophies/10000.png',
+                image256: 'assets/img/trophies/10000_256.png'
+            },
+            {
+                name: 'Ça use les souliers',
+                points: 30,
+                description: 'A force de marcher, vous réalisez des distances incroyables. Bientôt un nombre à 3 chiffres.',
+                pas: 0,
+                distance: 1000000,
+                unlocked: false,
+                image: 'assets/img/trophies/10km.png',
+                image256: 'assets/img/trophies/10km_256.png'
+            },
+            {
+                name: 'Petit randonneur',
+                points: 30,
+                description: 'Vous venez de faire une distance cumulée d\'un Semi-marathon : 21 Km atteints ! Encore un semi-effort pour devenir un Marathoniens de légende. ',
+                pas: 0,
+                distance: 2100000,
+                unlocked: false,
+                image: 'assets/img/trophies/semi-marathon.png',
+                image256: 'assets/img/trophies/semi-marathon_256.png'
+            },
+            {
+                name: 'Grand voyageur',
+                points: 90,
+                description: 'Vos efforts ont permis de faire la distance d\'un véritable marathon : 42 Km atteints ! S-Fit vous encourage pour la suite.',
+                pas: 0,
+                distance: 4200000,
+                unlocked: false,
+                image: 'assets/img/trophies/marathon.png',
+                image256: 'assets/img/trophies/marathon_256.png'
+            },
+            {
+                name: 'On ne l\'arrête pas',
+                points: 90,
+                description: '100 000 pas atteints ! Décidement... Vos mollets vont vous permettre d\'atteindre les sommets de la plus haute montagne.',
+                pas: 100000,
+                distance: 0,
+                unlocked: false,
+                image: 'assets/img/trophies/100000.png',
+                image256: 'assets/img/trophies/100000_256.png'
+            },
+            {
+                name: 'Le centième effort',
+                points: 90,
+                description: 'Voila vos 100 Km sont atteints ! Nous vous invitons maintenant à faire le maximum ! Jusqu\'au bout du monde !',
+                pas: 0,
+                distance: 10000000,
+                unlocked: false,
+                image: 'assets/img/trophies/100km.png',
+                image256: 'assets/img/trophies/100km_256.png'
+            },
+            {
+                name: 'Un petit pas pour l\'homme...',
+                points: 200,
+                description: 'Tous les trophées sont débloqués et le 1 million de pas atteint, bravo ! Vous devenez officiellement un membre premium S-Fit',
+                pas: 1000000,
+                distance: 0,
+                unlocked: false,
+                image: 'assets/img/trophies/million.png',
+                image256: 'assets/img/trophies/million_256.png'
+            }
+        ];
+        for (var _i = 0, _a = this.data; _i < _a.length; _i++) {
+            var pdata = _a[_i];
+            /*if (totalpas >= pdata.pas && totaldistance >= pdata.distance) {
+              pdata.unlocked = true;
+            }*/
+            if (!pdata.unlocked) {
+                pdata.image = "assets/img/trophies/bloque.png";
+            }
+        }
     }
-    MyWinPage.prototype.openTrophy = function () {
-        var myData = {
-            name: 'Mon premier trophée',
-            point: 1,
-            description: 'Bienvenu dans notre application ! Pour vous encourager dans votre programme connectén nous vous offrons votre premier Trophée ! Bon courage pour la suite !',
-            image: '../../assets/img/trophies/trophy.png'
-        };
-        var myTrophy = this.modal.create('TrophyPage', { data: myData });
-        myTrophy.present();
+    MyWinPage.prototype.openTrophy = function (data) {
+        if (data.unlocked) {
+            var myTrophy = this.modal.create('TrophyPage', { vdata: data });
+            myTrophy.present();
+        }
     };
     return MyWinPage;
 }());
 MyWinPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-myWin',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\myWin\myWin.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Trophées</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item (click)="openTrophy()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/img/trophies/premier.png"/>\n\n      </ion-thumbnail>\n\n      <h2>Mon premier trophée</h2>\n\n    </ion-item>\n\n    <ion-item (click)="openTrophy()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/img/trophies/1000.png">\n\n      </ion-thumbnail>\n\n      <h2>1 000 pas</h2>\n\n    </ion-item>\n\n    <ion-item (click)="openTrophy()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/img/trophies/1km.png">\n\n      </ion-thumbnail>\n\n      <h2>1 Km</h2>\n\n    </ion-item>\n\n    <ion-item (click)="openTrophy()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/img/trophies/10000.png">\n\n      </ion-thumbnail>\n\n      <h2>10 000 pas</h2>\n\n    </ion-item>\n\n    <ion-item (click)="openTrophy()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/img/trophies/10km.png">\n\n      </ion-thumbnail>\n\n      <h2>10 Km</h2>\n\n    </ion-item>\n\n    <ion-item (click)="openTrophy()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/img/trophies/semi-marathon.png">\n\n      </ion-thumbnail>\n\n      <h2>Semi-marathon</h2>\n\n    </ion-item>\n\n    <ion-item (click)="openTrophy()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/img/trophies/marathon.png">\n\n      </ion-thumbnail>\n\n      <h2>Marathon</h2>\n\n    </ion-item>\n\n    <ion-item (click)="openTrophy()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/img/trophies/100000.png">\n\n      </ion-thumbnail>\n\n      <h2>100 000 pas</h2>\n\n    </ion-item>\n\n    <ion-item (click)="openTrophy()">\n\n      <ion-thumbnail item-start>\n\n        <img src="assets/img/trophies/100km.png">\n\n      </ion-thumbnail>\n\n      <h2>100 Km</h2>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\myWin\myWin.html"*/
+        selector: 'page-myWin',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\myWin\myWin.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Trophées</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item *ngFor="let pdata of data" (click)="openTrophy(pdata)">\n\n      <!--<ion-thumbnail item-start *ngIf="{{ pdata.unlocked }}; then thenBlock else elseBlock">\n\n        <img #thenBlock src="{{ pdata.image }}"/>\n\n        <img #elseBlock src="assets/img/trophies/bloque.png"/>\n\n      </ion-thumbnail>-->\n\n      <ion-thumbnail item-start>\n\n        <img src="{{ pdata.image }}"/>\n\n      </ion-thumbnail>\n\n      <h2 style="font-size: 1.32rem;">{{ pdata.name }}</h2>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\myWin\myWin.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
 ], MyWinPage);
@@ -55931,7 +56038,7 @@ ProgressionPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
         selector: 'page-progression',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\progression\progression.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Ma Progression</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!--<ion-list>   Exemple of list\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>-->\n\n    <p> Mes Progressions </p>\n\n</ion-content>'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\progression\progression.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
 ], ProgressionPage);
 
 //# sourceMappingURL=progression.js.map
@@ -55956,16 +56063,68 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var UserChoicePage = (function () {
-    function UserChoicePage(navCtrl) {
-        this.navCtrl = navCtrl;
+    function UserChoicePage(modal) {
+        this.modal = modal;
+        this.data = [
+            {
+                nom: 'Choain',
+                prenom: 'Pierre-Alexandre',
+                items: [
+                    { title: 'Sexe', note: 'M' },
+                    { title: 'Taille', note: '174' },
+                    { title: 'Poids', note: '74' },
+                    { title: 'Date', note: '09/03/1996' }
+                ],
+                sexe: 'M',
+                taille: 174,
+                poids: 74,
+                date: '09/03/1996'
+            },
+            {
+                nom: 'Kieffer',
+                prenom: 'Sarah',
+                items: [
+                    { title: 'Sexe', note: 'F' },
+                    { title: 'Taille', note: '168' },
+                    { title: 'Poids', note: '70' },
+                    { title: 'Date', note: '16/04/1996' }
+                ],
+                sexe: 'F',
+                taille: 168,
+                poids: 70,
+                date: '16/04/1996'
+            },
+            {
+                nom: 'Briceno-Aguilera',
+                prenom: 'David',
+                items: [
+                    { title: 'Sexe', note: 'M' },
+                    { title: 'Taille', note: '170' },
+                    { title: 'Poids', note: '78' },
+                    { title: 'Date', note: '30/01/1996' }
+                ],
+                sexe: 'M',
+                taille: 170,
+                poids: 78,
+                date: '30/01/1996'
+            }
+        ];
     }
+    UserChoicePage.prototype.openUsers = function (data) {
+        var myUsers = this.modal.create('UsersPage', { vdata: data });
+        myUsers.present();
+    };
+    UserChoicePage.prototype.addUser = function () {
+        var addUser = this.modal.create('AddPage');
+        addUser.present();
+    };
     return UserChoicePage;
 }());
 UserChoicePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-userChoice',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Choix de l\'Utilisateur</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>User Choice with Ionic Starter</h3>\n\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n  </p>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/
+        selector: 'page-userChoice',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Choix de l\'Utilisateur</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n\n\n  <ion-list>\n\n    <ion-list-header>\n\n      <h1>Qui est-ce ?</h1>\n\n    </ion-list-header>\n\n    <a ion-item (click)="openUsers(data[0])">\n\n      Pierre-Alexandre\n\n    </a>\n\n    <a ion-item (click)="openUsers(data[1])">\n\n      Sarah\n\n    </a>\n\n    <a ion-item (click)="openUsers(data[2])">\n\n      David\n\n    </a>\n\n  </ion-list>\n\n\n\n\n\n\n\n  <button ion-button icon-right (click)="addUser()" >\n\n    Ajouter un utilisateur\n\n    <ion-icon name="person-add"></ion-icon>\n\n  </button>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\userChoice\userChoice.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
 ], UserChoicePage);
 
 //# sourceMappingURL=userChoice.js.map
@@ -74495,8 +74654,16 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"../pages/trophy/trophy.module": [
+	"../pages/add/add.module": [
 		265,
+		2
+	],
+	"../pages/trophy/trophy.module": [
+		266,
+		1
+	],
+	"../pages/users/users.module": [
+		267,
 		0
 	]
 };
@@ -74570,7 +74737,9 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/trophy/trophy.module#TrophyPageModule', name: 'TrophyPage', segment: 'trophy', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/add/add.module#AddPageModule', name: 'AddPage', segment: 'add', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/trophy/trophy.module#TrophyPageModule', name: 'TrophyPage', segment: 'trophy', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/users/users.module#UsersPageModule', name: 'UsersPage', segment: 'users', priority: 'low', defaultHistory: [] }
                 ]
             }),
         ],
@@ -74846,13 +75015,13 @@ var MyApp = (function () {
     return MyApp;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */]),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */])
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\app\app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map
@@ -74886,7 +75055,7 @@ CreateUserPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
         selector: 'page-createUser',template:/*ion-inline-start:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\createUser\createUser.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>Créer un Utilisateur</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <!--<ion-list>   Exemple of list\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-right>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>-->\n    <p> Créer un Utilisateur </p>\n</ion-content>\n'/*ion-inline-end:"C:\Users\valbe\sfit_app\S-Fit_Application\src\pages\createUser\createUser.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
 ], CreateUserPage);
 
 //# sourceMappingURL=createUser.js.map
