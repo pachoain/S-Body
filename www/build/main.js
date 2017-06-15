@@ -55817,11 +55817,12 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Objectifs</ion-title>\n\n  </ion-navbar>\n\n	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n	<div id="accelerometer">Waiting for accelerometer...</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Objectifs</ion-title>\n\n  </ion-navbar>\n\n	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <div class="steps">\n\n    <div id="container"></div>\n\n    <span class="reached" id="reached"> Objectif atteint !</span>\n\n    <img id="feet" src="assets/img/pied2.0.png" />\n\n    <img id="goal" src="assets/img/star2.1.png" />\n\n    <div id="accelerometer">12345</div>\n\n  </div>\n\n  <button ion-button onclick="goBar(5000, 10000)">Load</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\home\home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object])
 ], HomePage);
 
+var _a;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -55853,10 +55854,9 @@ InformationsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
         selector: 'page-informations',template:/*ion-inline-start:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\informations\informations.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Informations</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!--<ion-list>   Exemple of list\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>-->\n\n    <p> Informations </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\informations\informations.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], InformationsPage);
 
-var _a;
 //# sourceMappingURL=informations.js.map
 
 /***/ }),
@@ -56005,10 +56005,9 @@ MyWinPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
         selector: 'page-myWin',template:/*ion-inline-start:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\myWin\myWin.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n        <ion-title>Trophées</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item *ngFor="let pdata of data" (click)="openTrophy(pdata)">\n\n      <!--<ion-thumbnail item-start *ngIf="{{ pdata.unlocked }}; then thenBlock else elseBlock">\n\n        <img #thenBlock src="{{ pdata.image }}"/>\n\n        <img #elseBlock src="assets/img/trophies/bloque.png"/>\n\n      </ion-thumbnail>-->\n\n      <ion-thumbnail item-start>\n\n        <img src="{{ pdata.image }}"/>\n\n      </ion-thumbnail>\n\n      <h2 style="font-size: 1.32rem;">{{ pdata.name }}</h2>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\myWin\myWin.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
 ], MyWinPage);
 
-var _a;
 //# sourceMappingURL=myWin.js.map
 
 /***/ }),

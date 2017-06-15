@@ -9,5 +9,12 @@
 </ion-header>
 
 <ion-content padding>
-	<div id="accelerometer">Waiting for accelerometer...</div>
+  <div class="steps">
+    <div id="container"></div>
+    <span class="reached" id="reached"> Objectif atteint !</span>
+    <img id="feet" src="assets/img/pied2.0.png" />
+    <img id="goal" src="assets/img/star2.1.png" />
+    <div id="accelerometer">12345</div>
+  </div>
+  <button ion-button onclick="goBar(5000, 10000)">Load</button>
 </ion-content>
