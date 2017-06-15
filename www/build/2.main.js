@@ -1,14 +1,14 @@
 webpackJsonp([2],{
 
-/***/ 268:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__users__ = __webpack_require__(270);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UsersPageModule", function() { return UsersPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add__ = __webpack_require__(268);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddPageModule", function() { return AddPageModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,36 +18,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var UsersPageModule = (function () {
-    function UsersPageModule() {
+var AddPageModule = (function () {
+    function AddPageModule() {
     }
-    return UsersPageModule;
+    return AddPageModule;
 }());
-UsersPageModule = __decorate([
+AddPageModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__users__["a" /* UsersPage */],
+            __WEBPACK_IMPORTED_MODULE_2__add__["a" /* AddPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__users__["a" /* UsersPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__add__["a" /* AddPage */]),
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_2__users__["a" /* UsersPage */]
+            __WEBPACK_IMPORTED_MODULE_2__add__["a" /* AddPage */]
         ]
     })
-], UsersPageModule);
+], AddPageModule);
 
-//# sourceMappingURL=users.module.js.map
+//# sourceMappingURL=add.module.js.map
 
 /***/ }),
 
-/***/ 270:
+/***/ 268:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,32 +60,40 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the UsersPage page.
+ * Generated class for the AddPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-var UsersPage = (function () {
-    function UsersPage(navParams, view) {
+var AddPage = (function () {
+    function AddPage(navParams, view, alertCtrl) {
         this.navParams = navParams;
         this.view = view;
-        this.data = this.navParams.get('vdata');
-        console.log(this.data);
+        this.alertCtrl = alertCtrl;
     }
-    UsersPage.prototype.closeUsers = function () {
+    AddPage.prototype.closeadd = function () {
         this.view.dismiss();
     };
-    return UsersPage;
+    AddPage.prototype.addUsers = function () {
+        var alert = this.alertCtrl.create({
+            title: 'Nouvel utilisateur ajouté!',
+            subTitle: 'Votre compte est désormais opérationnel.',
+            buttons: ['OK']
+        });
+        alert.present();
+        this.view.dismiss();
+    };
+    return AddPage;
 }());
-UsersPage = __decorate([
+AddPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-users',template:/*ion-inline-start:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\users\users.html"*/'<!--\n\n  Generated template for the UsersPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Votre profil</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="closeUsers()">\n\n        <span ion-text color="primary" showWhen="ios">Annuler</span>\n\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item>\n\n      <h2>{{data.nom}}</h2>\n\n      <p>{{data.prenom}}</p>\n\n    </ion-item>\n\n\n\n    <ion-item *ngFor="let item of data[\'items\']">\n\n      {{item.title}}\n\n        <ion-note item-end>\n\n          {{item.note}}\n\n        </ion-note>\n\n    </ion-item>\n\n\n\n</ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\users\users.html"*/,
+        selector: 'page-add',template:/*ion-inline-start:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\add\add.html"*/'<!--\n\n  Generated template for the UsersPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Ajouter un profil</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="closeadd()">\n\n        <span ion-text color="primary" showWhen="ios">Annuler</span>\n\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-input id =\'nom\' type="text" placeholder="Nom"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-input id =\'prenom\' type="text" placeholder="Prénom"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n    <ion-label>Sexe</ion-label>\n\n      <ion-select>\n\n        <ion-option value="M">Homme</ion-option>\n\n        <ion-option value="F">Femme</ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-input type="number" placeholder="Taille (en cm)"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-input type="number" placeholder="Poids (en Kg)"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-input type="number" placeholder="Code Miroir"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-label>Date de Naissance :</ion-label>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-input type="date"></ion-input>\n\n    </ion-item>\n\n</ion-list>\n\n\n\n<div padding>\n\n  <button ion-button (click)="addUsers()" block>Enregistrer</button>\n\n</div>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pierr\Documents\Apps\S-Fit_Application\src\pages\add\add.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */]])
-], UsersPage);
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* AlertController */]])
+], AddPage);
 
-//# sourceMappingURL=users.js.map
+//# sourceMappingURL=add.js.map
 
 /***/ })
 

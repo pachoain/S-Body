@@ -25,6 +25,27 @@ var a1 = 0.448952;
 
 var calories = 0;
 
+function goBar(step, goal){
+  var percent = step / goal;
+
+  if (percent < 1) {
+    var bar = new ProgressBar.Circle(container, {
+      strokeWidth: 6,
+      duration: 0,
+      color: '#FF7B53',
+      trailColor: '#FF7B53',
+      trailWidth: 1,
+      svgStyle: null
+    });
+    bar.animate(percent);
+    document.getElementById('goal').style.visibility = "hidden";
+    document.getElementById('reached').style.visibility = "hidden";
+  } else {
+    document.getElementById('goal').style.visibility = "visible";
+    document.getElementById('reached').style.visibility = "visible";
+  }
+}
+
 // Wait for device API libraries to load
 //
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -118,6 +139,7 @@ function onSuccess(acceleration) {
 	}
   calculDistance(182);
   calculBurnCal();
+  goBar(5000, 10000);
 	element.innerHTML = /*'Acceleration X: ' + acceleration.x + '<br />' +
 		'Acceleration Y: ' + acceleration.y + '<br />' +
 		'Acceleration Z: ' + acceleration.z + '<br />' +*/
