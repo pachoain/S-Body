@@ -8,17 +8,21 @@
 </ion-header>
 
 <ion-content padding>
-    <!--<ion-list>   Exemple of list
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>-->
-    <p> Mes Progressions </p>
+    <ion-card>
+      <ion-card-content>
+        <canvas #barCanvas height="250"></canvas>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <canvas #doughnutCanvas height="250"></canvas>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <canvas #lineCanvas height="400"></canvas>
+      </ion-card-content>
+    </ion-card>
 </ion-content>
