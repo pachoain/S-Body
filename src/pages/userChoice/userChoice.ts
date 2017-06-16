@@ -73,6 +73,6 @@ export class UserChoicePage {
     this.nav.setRoot(HomePage);
   }
 
-
+	lockbar = 0;
 
 }

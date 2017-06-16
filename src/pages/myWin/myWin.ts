@@ -11,7 +11,7 @@ export class MyWinPage {
     {
       name: 'Mes premiers pas...',
       points: 1,
-      description: 'Bienvenue dans notre application ! Pour vous encourager dans votre programme connectée nous vous offrons votre premier Trophée ! Bon courage pour la suite !',
+      description: 'Bienvenue dans notre application ! Pour vous encourager dans votre programme connecté nous vous offrons votre premier Trophée ! Bon courage pour la suite !',
       pas: 0,
       distance: 0,
       unlocked: true,
@@ -114,10 +114,10 @@ export class MyWinPage {
     for (let pdata of this.data) {
       /*if (totalpas >= pdata.pas && totaldistance >= pdata.distance) {
         pdata.unlocked = true;
-      }*/
+      }
       if (!pdata.unlocked) {
         pdata.image = "assets/img/trophies/bloque.png";
-      }
+      }*/
     }
   }
 

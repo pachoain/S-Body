@@ -24364,8 +24364,8 @@ ion-navbar.toolbar {
 }
 
 .toolbar-background-md {
-  border-color: #b2b2b2;
-  background: #f8f8f8;
+  border-color: #FF7B53;
+  background: #FF7B53;
 }
 
 .header-md::after,
@@ -24421,7 +24421,7 @@ ion-navbar.toolbar {
   padding-bottom: 0;
   font-size: 2rem;
   font-weight: 500;
-  color: #424242;
+  color: #ffffff;
 }
 
 .bar-buttons-md {
@@ -24616,7 +24616,7 @@ ion-navbar.toolbar {
 .bar-button-default-md,
 .bar-button-clear-md-default,
 .bar-button-md-default {
-  color: #424242;
+  color: #ffffff;
   background-color: transparent;
 }
 
@@ -25864,8 +25864,8 @@ ion-navbar.toolbar {
 }
 
 .toolbar-background-wp {
-  border-color: #b2b2b2;
-  background: #f8f8f8;
+  border-color: #FF7B53;
+  background: #FF7B53;
 }
 
 .toolbar-content-wp {
@@ -27453,4 +27453,74 @@ ion-navbar.toolbar {
   .wp .modal-wrapper > .ion-page > ion-header > ion-content.statusbar-padding:first-child[padding-top] .scroll-content {
     padding-top: calc(16px + 20px);
   }
+}
+
+page-home ion-content {
+  text-align: center;
+}
+
+page-home ion-label {
+  font-size: 7vw;
+}
+
+page-home .steps {
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: absolute;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #ffac53;
+}
+
+page-home #container {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: auto;
+}
+
+page-home .steps .reached {
+  font-size: 6vw;
+  position: absolute;
+  text-align: center;
+  margin-top: -320px;
+  margin-left: 29%;
+}
+
+page-home .steps #accelerometer {
+  font-size: 10vw;
+}
+
+page-home .steps #goal {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+page-home .steps #feet {
+  position: absolute;
+  width: 12%;
+  height: auto;
+  top: 180%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ion-label {
+  overflow: visible !important;
 }

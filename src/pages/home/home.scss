@@ -1,4 +1,12 @@
 page-home {
+	ion-content {
+		text-align: center;
+	}
+	
+	ion-label {
+		font-size: 7vw;
+	}
+	
   .steps {
   	width: 100%;
     height: auto;
@@ -9,11 +17,14 @@ page-home {
   	display: flex;
     flex-direction: column;
     justify-content: center;
+		color: #ffac53;
   }
 
   #container {
   	position: absolute;
-    width: 100%;
+    width: 90%;
+		left: 50%;
+		transform: translateX(-50%);
     height: auto;
   }
 
@@ -39,7 +50,7 @@ page-home {
   	position: absolute;
   	width: 12%;
   	height: auto;
-  	top: 170%; left: 50%;
+  	top: 180%; left: 50%;
     transform: translate(-50%, -50%);
   }
 }

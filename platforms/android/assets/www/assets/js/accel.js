@@ -13,6 +13,7 @@ var limitOldValueZ = 7.5;
 var limitYValueZ = 6.5;
 var limitValueX = 1.5;
 var choosenFrequency = 120;
+var lockbar = 0;
 
 /*   Coefficients calcul distance en fonction de la taille de l'utilisateur  */
 var a = 0.64878048;
@@ -24,6 +25,31 @@ var distance = 0;
 var a1 = 0.448952;
 
 var calories = 0;
+
+function goBar(step, goal){
+  var percent = step / goal;
+
+  if (percent < 1) {
+		if(lockbar === 0){
+			var bar = new ProgressBar.Circle(container, {
+      	strokeWidth: 6,
+      	duration: 0,
+      	color: '#ffac53',
+      	trailColor: '#CCCCCC',
+      	trailWidth: 1,
+      	svgStyle: null
+    	});
+			lockbar++;
+		}
+    
+    bar.animate(percent);
+    document.getElementById('goal').style.visibility = "hidden";
+    document.getElementById('reached').style.visibility = "hidden";
+  } else {
+    document.getElementById('goal').style.visibility = "visible";
+    document.getElementById('reached').style.visibility = "visible";
+  }
+}
 
 // Wait for device API libraries to load
 //
@@ -62,7 +88,6 @@ function onDeviceReady() {
 // Start watching the acceleration
 //
 function startWatch() {
-
 	// Update acceleration every 0.5 seconds
 	var options = {
 		frequency: choosenFrequency
@@ -85,6 +110,8 @@ function stopWatch() {
 function onSuccess(acceleration) {
 	// Ecriture du résultat dans ma div
 	var element = document.getElementById('accelerometer');
+	
+	goBar(6284, 10000);
 
 	// Calcul des pas quand le téléphone est à l'envers dans la poche
 	if (acceleration.y < 0) {
@@ -118,6 +145,7 @@ function onSuccess(acceleration) {
 	}
   calculDistance(182);
   calculBurnCal();
+
 	element.innerHTML = /*'Acceleration X: ' + acceleration.x + '<br />' +
 		'Acceleration Y: ' + acceleration.y + '<br />' +
 		'Acceleration Z: ' + acceleration.z + '<br />' +*/
