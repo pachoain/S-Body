@@ -27466,7 +27466,7 @@ page-home ion-label {
 page-home .steps {
   width: 100%;
   height: auto;
-  top: 50%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
