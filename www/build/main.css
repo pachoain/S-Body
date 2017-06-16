@@ -24364,8 +24364,8 @@ ion-navbar.toolbar {
 }
 
 .toolbar-background-md {
-  border-color: #FF7B53;
-  background: #FF7B53;
+  border-color: #b2b2b2;
+  background: #f8f8f8;
 }
 
 .header-md::after,
@@ -24421,7 +24421,7 @@ ion-navbar.toolbar {
   padding-bottom: 0;
   font-size: 2rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #424242;
 }
 
 .bar-buttons-md {
@@ -24616,7 +24616,7 @@ ion-navbar.toolbar {
 .bar-button-default-md,
 .bar-button-clear-md-default,
 .bar-button-md-default {
-  color: #ffffff;
+  color: #424242;
   background-color: transparent;
 }
 
@@ -25864,8 +25864,8 @@ ion-navbar.toolbar {
 }
 
 .toolbar-background-wp {
-  border-color: #FF7B53;
-  background: #FF7B53;
+  border-color: #b2b2b2;
+  background: #f8f8f8;
 }
 
 .toolbar-content-wp {
@@ -27471,7 +27471,7 @@ page-home .steps {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  position: absolute;
+  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -27482,11 +27482,12 @@ page-home .steps {
   -ms-flex-pack: center;
   justify-content: center;
   color: #ffac53;
+  margin-top: -125px;
 }
 
 page-home #container {
   position: absolute;
-  width: 90%;
+  width: 75%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -27501,8 +27502,10 @@ page-home .steps .reached {
   margin-left: 29%;
 }
 
-page-home .steps #accelerometer {
-  font-size: 10vw;
+page-home .steps #taccelerometer {
+  font-size: 7vw;
+  width: 40%;
+  margin-left: 30%;
 }
 
 page-home .steps #goal {
@@ -27515,10 +27518,32 @@ page-home .steps #feet {
   position: absolute;
   width: 12%;
   height: auto;
-  top: 180%;
+  top: 130%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+page-home .infos {
+  position: relative;
+}
+
+page-home .distinfo, page-home .calinfo {
+  width: 43%;
+  margin-top: 380px;
+  height: 90px;
+}
+
+page-home .distinfo {
+  float: left;
+}
+
+page-home .calinfo {
+  float: right;
+}
+
+page-home .infos ion-icon {
+  font-size: 2em;
 }
 
 ion-label {

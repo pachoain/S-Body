@@ -9,13 +9,35 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-label>Progression du jour</ion-label>
   <div class="steps">
     <div id="container"></div>
     <span class="reached" id="reached"> Objectif atteint !</span>
     <img id="feet" src="assets/img/pied2.0.png" />
     <img id="goal" src="assets/img/star2.1.png" />
-    <div id="accelerometer">6284</div>
+    <div id="taccelerometer">
+      6 284
+      <hr />
+      10 000
+    </div>
   </div>
-	<ion-label>Progression du jour</ion-label>
   <button ion-button onclick="goBar(6284, 10000)">Load</button>
+  <div class="infos">
+    <ion-card class="distinfo">
+      <ion-card-title>
+        Distance
+      </ion-card-title>
+      <ion-icon name='walk' item-start style="color: #ff7b53;"></ion-icon>
+      <ion-badge>4.46 Km</ion-badge>
+      <br />
+    </ion-card>
+    <ion-card class="calinfo">
+      <ion-card-title>
+        Calories
+      </ion-card-title>
+      <ion-icon name='flame' item-start style="color: #ff7b53;"></ion-icon>
+      <ion-badge>3 971 cal</ion-badge>
+      <br />
+    </ion-card>
+  </div>
 </ion-content>
