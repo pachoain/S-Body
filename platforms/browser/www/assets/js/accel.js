@@ -3,6 +3,11 @@
 /*  Variables nécessaires pour le compteur de pas */
 var watchID = null;
 var myStepCount = 0;
+
+/*  Accesseurs HTML  */
+var element, distancePrint, calBurnPrint, objectiveStep;
+
+/*   Old Values and limit Values    */
 var myOldValue = 0;
 var myOldValueZ = 0;
 var myOldValueX = 0;
@@ -12,19 +17,21 @@ var limitValueZ = 9;
 var limitOldValueZ = 7.5;
 var limitYValueZ = 6.5;
 var limitValueX = 1.5;
+
 var choosenFrequency = 120;
 var lockbar = 0;
+
+/*  User Variables  */
+var username = "David Briceno";
+var userSize = 170;
+
 
 /*   Coefficients calcul distance en fonction de la taille de l'utilisateur  */
 var a = 0.64878048;
 var b = 44.6744;
 
-var distance = 0;
-
 /*   Coefficients calcul calories brulées   */
 var a1 = 0.448952;
-
-var calories = 0;
 
 function goBar(step, goal){
   var percent = step / goal;
@@ -42,7 +49,7 @@ function goBar(step, goal){
 			lockbar++;
 		}
     
-    bar.animate(percent);
+    //bar.animate(percent);
     document.getElementById('goal').style.visibility = "hidden";
     document.getElementById('reached').style.visibility = "hidden";
   } else {
@@ -55,23 +62,16 @@ function goBar(step, goal){
 //
 document.addEventListener("deviceready", onDeviceReady, false);
 
-// Test sending data to constellation
-//
-/*function sendToConstellation(){
-  console.log("I'm a button");
-  constellation.server.sendMessage({Scope:'Package', Args:['StepManager']}, 'updateStepHistory', 38);
-}*/
-
 // Calcul of distance with user's size
 //
-function calculDistance(userSize){
-  distance = (userSize * a - b) * myStepCount;
+function calculDistance(userSize, stepCount){
+  return (userSize * a - b) * stepCount;
 }
 
 // Calcul of burn calories with step counter and unactivity
 //
-function calculBurnCal(){
-  calories = a1 * myStepCount;
+function calculBurnCal(stepCount){
+  return a1 * stepCount;
 }
 
 // device APIs are available
@@ -79,9 +79,6 @@ function calculBurnCal(){
 function onDeviceReady() {
 	cordova.plugins.backgroundMode.enable();
 	startWatch();
-  stepHist = 38;
-  console.log(stepHist);
-	console.log("i'm here");
 	console.log(choosenFrequency);
 }
 
@@ -92,7 +89,7 @@ function startWatch() {
 	var options = {
 		frequency: choosenFrequency
 	};
-
+	
 	watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
 }
 
@@ -108,16 +105,20 @@ function stopWatch() {
 // onSuccess: Get a snapshot of the current acceleration
 //
 function onSuccess(acceleration) {
-	// Ecriture du résultat dans ma div
-	var element = document.getElementById('accelerometer');
 	
-	goBar(6284, 10000);
-
+	// Ecriture du résultat dans ma div
+	element = document.getElementById('accelerometer');
+	distancePrint = document.getElementById('distance');
+  calBurnPrint = document.getElementById('calBurn');
+	objectiveStep = document.getElementById('objective');
+		
+	
 	// Calcul des pas quand le téléphone est à l'envers dans la poche
 	if (acceleration.y < 0) {
 		if (acceleration.y > -limitValueNeg) {
 			if (myOldValue < -limitValueNeg) {
-				myStepCount = myStepCount + 1;
+				//myStepCount = myStepCount + 1;
+				constellation.server.sendMessage({Scope:'Package', Args:['SfitDataManager']}, 'incrementStep', [username, 1]);
 			}
 		}
 	// Calcul des pas quand le téléphone est dans le bon sens
@@ -125,36 +126,21 @@ function onSuccess(acceleration) {
 		if (myOldValue !== 0) {
 			if (acceleration.y > limitValuePos - 0.1 && acceleration.y > limitValuePos + 0.1) {
 				if (myOldValue <= limitValuePos) {
-					myStepCount = myStepCount + 1;
+					//myStepCount = myStepCount + 1;
+          constellation.server.sendMessage({Scope:'Package', Args:['SfitDataManager']}, 'incrementStep', [username, 1]);
 				}
 				// Calcul des pas quand on marche le téléphone en main
 			} else if(acceleration.y < limitYValueZ && myOldValue < limitYValueZ){
 				if(acceleration.z > limitValueZ && myOldValueZ < limitOldValueZ && acceleration.x < limitValueX && acceleration.x > -limitValueX){
-					myStepCount = myStepCount + 1;
-          stepHist = myStepCount;
-          constellation.server.sendMessage({Scope:'Package', Args:['StepManager']}, 'updateStepHistory', stepHist);
+					//myStepCount = myStepCount + 1;
+          constellation.server.sendMessage({Scope:'Package', Args:['SfitDataManager']}, 'incrementStep', [username, 1]);
 				}
         myOldValueZ = acceleration.z;
 			}
-      /*} else if(acceleration.y < limitYValueZ && myOldValue < limitYValueZ){
-				if(acceleration.x > limitValueX && myOldValueX < limitValueX && acceleration.z > limitValueZ){
-					myStepCount = myStepCount + 1;
-				}
-			}*/
 		}
 	}
-  calculDistance(182);
-  calculBurnCal();
-
-	element.innerHTML = /*'Acceleration X: ' + acceleration.x + '<br />' +
-		'Acceleration Y: ' + acceleration.y + '<br />' +
-		'Acceleration Z: ' + acceleration.z + '<br />' +*/
-    'Distance ' + distance + '<br />' +
-    'Calories ' + calories + '<br />' +
-		'MyCountStep ' + myStepCount + '<br />'; /*+
-		'Timestamp: ' + acceleration.timestamp + '<br />';*/
+	
 	myOldValue = acceleration.y;
-
   myOldValueX = acceleration.x;
 }
 
@@ -162,4 +148,20 @@ function onSuccess(acceleration) {
 //
 function onError() {
 	alert('onError!');
+}
+
+function subscribeConst() {
+	constellation.client.registerStateObjectLink("*", "SfitDataManager", "TodaySteps"+username, "*", (so) => {
+		console.log(so.Value["step"]);
+		console.log(objectiveStep);
+		if (element && distancePrint && calBurnPrint && objectiveStep) {
+			console.log(so);
+			element.innerHTML = so.Value.step;
+			objectiveStep.innerHTML = so.Value.goal;
+			distancePrint.innerHTML = (calculDistance(userSize, so.Value.step)/100).toFixed(2) + " m";
+			calBurnPrint.innerHTML = (calculBurnCal(so.Value.step)).toFixed(2) + " Cal";
+
+			goBar(so.Value, so.Value.goal);
+		}
+	});
 }
